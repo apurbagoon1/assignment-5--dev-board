@@ -19,46 +19,84 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style>
-    .poppins-font {
-        font-family: "Poppins", sans-serif;
-    }
-    
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
     </style>
 </head>
 
 <body class=" poppins-font">
-    <header class="bg-[#FFFFFF] max-w-screen-xl mx-auto my-6 p-6 rounded-2xl">
+    <header class="bg-[#FFFFFF] max-w-screen-xl mx-auto my-6 px-6 py-3 rounded-2xl">
         <!-- Navbar Starts -->
         <nav class="flex justify-between items-center">
-            <div>              
-                <a class="flex justify-start items-center gap-2"> 
-                    <img class="w-12" src="assets/logo.png" alt="logo">
-                    <h3 class="text-4xl font-light">Dev<span class="text-black font-bold">Board</span></h3>                       
+            <div>
+                <a class="flex justify-start items-center gap-2 py-2 cursor-pointer hover:bg-[#F4F7FF]">
+                    <img class="w-12 h-12" src="assets/logo.png" alt="logo">
+                    <h3 class="text-4xl font-light">Dev<span class="text-black font-bold">Board</span></h3>
                 </a>
             </div>
             <div>
-                <div class="flex items-center gap-10">
-                    <div class="flex items-center gap-2">
-                        <img class="w-8" src="assets/checkbox.png" alt="">
-                        <p class="font-bold text-3xl">23</p>
+                <div class="flex items-center gap-9">
+                    <div class="flex items-center gap-3 bg-[#F4F7FF] rounded-3xl p-4">
+                        <img class="w-8 h-8" src="assets/checkbox.png" alt="">
+                        <h5 class="font-bold text-3xl">23</h5>
                     </div>
-                    <div>
-                        <img class="w-10" src="assets/theme-btn.png" alt="">
+                    <div class="bg-[#F4F7FF] rounded-full p-4">
+                        <img class="w-10 h-10" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
-
             </div>
-
         </nav>
     </header>
 
-    <main>
+    <main class="flex items center gap-6 max-w-screen-xl mx-auto mb-6">
+        <!-- Tasks Section Starts -->
+        <section class="w-3/4 bg-[#FFFFFF] rounded-2xl p-4">
+            <div class="grid grid-cols-4 gap-6">
+                <div class="flex items-center rounded-xl bg-[#F4F7FF] gap-4 p-4">
+                    <div class="bg-[#FFFFFF] rounded-full p-3">
+                        <img class="w-5 h-5" src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium">Task Assigned</p>
+                        <h5 class="font-bold text-2xl">05</h5>
+                    </div>
+                </div>
+                <div class="flex items-center rounded-xl gap-4 p-4 bg-gradient-to-tl from-[#9BA8F8] via-[#6C7FFA] to-[#3752FD] px-8 col-span-2">
+                    <div>
+                        <img class="w-12 h-14" src="assets/board.png" alt="">
+                    </div>
+                    <div>
+                        <p class="font-medium text-xl text-white">Discover Something <br> New Today!</p>
+                    </div>
+                </div>
+                <div class="flex items-center rounded-xl bg-[#F4F7FF] gap-4 p-4">
+                    <div class="bg-[#FFFFFF] rounded-full p-3">
+                        <img class="w-5 h-5" src="assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <p id="day" class="text-xl"></p>
+                        <h5 id="date" class="font-bold text-xl"></h5>
+                    </div>
+                </div>                                
+            </div>
+
+        </section>
+
+        <!-- Activity Log Section Starts -->
+        <section class="w-1/4 ">
+
+        </section>
+
+
 
     </main>
 
     <footer>
 
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 
 </html>
