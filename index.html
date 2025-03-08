@@ -12,9 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-
     <!-- Tailwind CSS VDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -38,10 +35,10 @@
             <div>
                 <div class="flex items-center gap-9">
                     <div class="flex items-center gap-3 bg-[#F4F7FF] rounded-3xl p-4">
-                        <img class="w-8 h-8" src="assets/checkbox.png" alt="">
-                        <h5 class="font-bold text-3xl">23</h5>
+                        <img class="w-7 h-7" src="assets/checkbox.png" alt="">
+                        <h5 id="task-completed" class="font-bold text-3xl">23</h5>
                     </div>
-                    <div class="bg-[#F4F7FF] rounded-full p-4">
+                    <div class="bg-[#F4F7FF] rounded-full p-4 cursor-pointer">
                         <img class="w-10 h-10" src="assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -52,6 +49,7 @@
     <main class="flex items center gap-6 max-w-screen-xl mx-auto mb-6">
         <!-- Tasks Section Starts -->
         <section class="w-3/4 bg-[#FFFFFF] rounded-2xl p-4">
+            <!-- Taskbar Starts -->
             <div class="grid grid-cols-4 gap-6">
                 <div class="flex items-center rounded-xl bg-[#F4F7FF] gap-4 p-4">
                     <div class="bg-[#FFFFFF] rounded-full p-3">
@@ -59,7 +57,7 @@
                     </div>
                     <div>
                         <p class="font-medium">Task Assigned</p>
-                        <h5 class="font-bold text-2xl">05</h5>
+                        <h5 id="task-left" class="font-bold text-2xl">06</h5>
                     </div>
                 </div>
                 <div class="flex items-center rounded-xl gap-4 p-4 bg-gradient-to-tl from-[#9BA8F8] via-[#6C7FFA] to-[#3752FD] px-8 col-span-2">
@@ -70,6 +68,7 @@
                         <p class="font-medium text-xl text-white">Discover Something <br> New Today!</p>
                     </div>
                 </div>
+                <!-- Live Date Starts -->
                 <div class="flex items-center rounded-xl bg-[#F4F7FF] gap-4 p-4">
                     <div class="bg-[#FFFFFF] rounded-full p-3">
                         <img class="w-5 h-5" src="assets/calender.png" alt="">
@@ -80,6 +79,111 @@
                     </div>
                 </div>                                
             </div>
+            
+            <div class="border border-dashed text-[#3752FD] opacity-20 my-6"></div>
+            <!-- Task Cards Starts -->
+            <div class="grid grid-cols-3 grid-rows-2 gap-6">
+                <!-- Task Card 1 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">ShopEase</p>
+                    <h3 class="font-medium text-xl my-4">Fix Mobile Button Issue</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task Card 2 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">CloudSync</p>
+                    <h3 class="font-medium text-xl my-4">Add Dark Mode</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task Card 3 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">SwiftPay</p>
+                    <h3 class="font-medium text-xl my-4">Optimize Home page</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task Card 4 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Meta</p>
+                    <h3 class="font-medium text-xl my-4">Add new emoji 🤲</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task Card 5 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Google LLC</p>
+                    <h3 class="font-medium text-xl my-4">Integrate OpenAI API</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Task Card 6 -->
+                <div class="bg-[#F4F7FF] rounded-2xl p-6">
+                    <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Glassdoar</p>
+                    <h3 class="font-medium text-xl my-4">Improve Job searching</h3>
+                    <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-sm opacity-50">Deadline</p>
+                            <h5 class="font-medium">21 March 2025</h5>
+                        </div>
+                        <div>
+                            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
         </section>
 
