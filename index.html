@@ -29,7 +29,7 @@
         <!-- Navbar Starts -->
         <nav class="flex justify-between items-center">
             <div>
-                <a class="flex justify-start items-center gap-2 py-2 cursor-pointer hover:bg-[#F4F7FF]">
+                <a class="flex justify-start items-center gap-2 pr-2 cursor-pointer hover:bg-[#F4F7FF]">
                     <img class="w-10 h-10" src="assets/logo.png" alt="logo">
                     <h3 class="text-3xl font-light">Dev<span class="text-black font-bold">Board</span></h3>
                 </a>
@@ -88,7 +88,7 @@
                 <!-- Task Card 1 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">ShopEase</p>
-                    <h3 class="font-medium text-xl my-4">Fix Mobile Button Issue</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Fix Mobile Button Issue</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -104,7 +104,7 @@
                 <!-- Task Card 2 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">CloudSync</p>
-                    <h3 class="font-medium text-xl my-4">Add Dark Mode</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Add Dark Mode</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -120,7 +120,7 @@
                 <!-- Task Card 3 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">SwiftPay</p>
-                    <h3 class="font-medium text-xl my-4">Optimize Home page</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Optimize Home page</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -136,7 +136,7 @@
                 <!-- Task Card 4 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Meta</p>
-                    <h3 class="font-medium text-xl my-4">Add new emoji 🤲</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Add new emoji 🤲</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -152,7 +152,7 @@
                 <!-- Task Card 5 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Google LLC</p>
-                    <h3 class="font-medium text-xl my-4">Integrate OpenAI API</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Integrate OpenAI API</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -168,7 +168,7 @@
                 <!-- Task Card 6 -->
                 <div class="bg-[#F4F7FF] rounded-2xl p-6">
                     <p class="bg-[#FFFFFF] rounded-lg px-4 py-2 inline-block">Glassdoar</p>
-                    <h3 class="font-medium text-xl my-4">Improve Job searching</h3>
+                    <h3 class="font-medium text-xl my-4 task-title">Improve Job searching</h3>
                     <p class="bg-[#FFFFFF] rounded-lg h-24 px-4 py-2 opacity-50 overflow-scroll">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                     <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
                     <div class="flex items-center justify-between">
@@ -190,10 +190,10 @@
                 <img class="w-4 h-4" src="assets/activity.png" alt="">
                 <p class="font-medium text-lg">Activity Log</p>
             </div>
-            <button class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Clear History</button>
+            <button id="clear-history" class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Clear History</button>
             <div class="border border-dashed text-[#3752FD] opacity-20 my-5"></div>
-            <div class="p-3 opacity-70 bg-[#F4F7FF]">
-                <p></p>
+            <div id="activity-log" class="p-3 opacity-70 bg-[#F4F7FF]">
+
             </div>
         </section>
     </main>
@@ -204,5 +204,4 @@
 
     <script src="JS/script.js"></script>
 </body>
-
 </html>
