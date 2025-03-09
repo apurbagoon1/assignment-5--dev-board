@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#F4F7FF]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind CSS VDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .poppins-font {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class=" poppins-font">
+    <header class="bg-[#FFFFFF] max-w-screen-xl mx-auto my-6 px-6 py-3 rounded-2xl">
+        <!-- Navbar Starts -->
+        <nav class="flex justify-between items-center">
+            <div>
+                <a class="flex justify-start items-center gap-2 pr-2 cursor-pointer hover:bg-[#F4F7FF]">
+                    <img class="w-10 h-10" src="assets/logo.png" alt="logo">
+                    <h3 class="text-3xl font-light">Dev<span class="text-black font-bold">Board</span></h3>
+                </a>
+            </div>
+            <div>
+                <button id="back" class="text-white bg-[#3752FD] rounded-lg px-5 py-3 cursor-pointer">Back to
+                    Desk</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto">
+        <section>
+            <div class="bg-[#FFFFFF] rounded-2xl p-6 mb-6">
+                <h3 class="font-semibold text-xl">Question-1: What are the different ways to select an element in the DOM?</h3>
+                <div class="border border-dashed text-[#3752FD] opacity-20 my-4"></div>
+                <p class="opacity-50">In JavaScript, elements in the DOM can be selected using methods such as document.getElementById("myId") to select by ID, document.getElementsByClassName("myClass") to select by class, document.getElementsByTagName("div") to select by tag name, document.querySelector(".myClass") to select the first matching element, and document.querySelectorAll(".myClass") to select all matching elements.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-2xl p-6 mb-6">
+                <h3 class="font-semibold text-xl">Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+                <div class="border border-dashed text-[#3752FD] opacity-20 my-4"></div>
+                <p class="opacity-50">innerHTML returns or sets the HTML content inside an element, preserving HTML tags and including hidden elements. innerText returns or sets only the visible text inside an element and does not include hidden elements. textContent returns or sets all text content inside an element, including hidden elements, but does not preserve HTML tags.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-2xl p-6 mb-6">
+                <h3 class="font-semibold text-xl">Question-3: What is event delegation in the DOM?</h3>
+                <div class="border border-dashed text-[#3752FD] opacity-20 my-4"></div>
+                <p class="opacity-50">Event delegation is a technique where a single event listener is attached to a parent element, and it handles events from child elements using event bubbling. This allows for more efficient event handling, especially for dynamically added elements.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-2xl p-6 mb-6">
+                <h3 class="font-semibold text-xl">Question-4: What is event bubbling in the DOM?</h3>
+                <div class="border border-dashed text-[#3752FD] opacity-20 my-4"></div>
+                <p class="opacity-50">Event bubbling is the process where an event triggered on a child element bubbles up through its parent elements, allowing each parent to handle the event. It can be stopped using event.stopPropagation() to prevent the event from reaching the parent elements.</p>
+            </div>
+            <div class="bg-[#FFFFFF] rounded-2xl p-6 mb-6">
+                <h3 class="font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+                <div class="border border-dashed text-[#3752FD] opacity-20 my-4"></div>
+                <p class="opacity-50">To create an element, use document.createElement("div"). To add the created element to the DOM, use element.appendChild(newElement). To remove an element, use element.remove() or parentElement.removeChild(element).</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Back to Desk
+        const backToDesk = document.getElementById("back");
+        backToDesk.addEventListener("click", function () {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>
