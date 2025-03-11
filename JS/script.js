@@ -15,7 +15,9 @@ liveDay.innerText = liveDayDate.toLocaleDateString("en-US", {
 
 const liveDate = document.getElementById("date");
 liveDate.innerText = liveDayDate.toLocaleDateString("en-US", {
-    month: "short", day: "numeric", year: "numeric"
+    month: "short", 
+    day: "numeric", 
+    year: "numeric"
 });
 
 // Task Left, Task Complete and Display Tasks Complete Massege
@@ -56,7 +58,11 @@ for (let i = 0; i < allButtons.length; i++) {
 
         let activityLogMasseges = document.createElement('p');
         activityLogMasseges.textContent = displayMessage;
-        activityLogMasseges.style.marginBottom = '20px';
+        activityLogMasseges.style.marginBottom = '16px';
+        activityLogMasseges.style.padding = '12px';
+        activityLogMasseges.style.borderRadius = '8px';
+        activityLogMasseges.style.opacity = '70';
+        activityLogMasseges.style.backgroundColor = '#F4F7FF';
         activityLog.appendChild(activityLogMasseges);
 
         tasksCompletion++;
